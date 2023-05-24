@@ -1,6 +1,7 @@
 import { Header } from "components/Header";
 import { styled } from "styled-components";
 import { SideBar } from "components/SideBar";
+
 const StyleLayout = styled.div`
   height: 100vh;
   display: flex;
@@ -17,7 +18,9 @@ export const Layout = ({ children }) => {
       <SideBar></SideBar>
       <div className="Contener">
         <Header />
-        <div></div>
+        <div>
+          {children}
+        </div>
       </div>
     </StyleLayout>
   );

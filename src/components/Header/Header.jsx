@@ -3,6 +3,7 @@ import SearchIcon from "assets/Icon.png";
 import NofiIcon from "assets/nofi.png";
 import Ellipse from "assets/Ellipse 5.png";
 import Avater from "assets/avatar.png";
+
 const StyleHeader = styled.div`
   display: flex;
   flex-direction: row;

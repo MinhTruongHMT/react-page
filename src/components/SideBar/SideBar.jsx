@@ -9,6 +9,7 @@ import Lovely from "assets/lovely.png";
 import Clock from "assets/clock.png";
 import Setting from "assets/setting.png";
 import Light from "assets/Light.png";
+import { Card } from "components/Card";
 
 const StyleSideBar = styled.div`
   display: flex;
@@ -134,6 +135,7 @@ export const SideBar = () => {
           <span class="slider round"></span>
         </label>
       </div>
+      <Card/>
     </StyleSideBar>
   );
 };
