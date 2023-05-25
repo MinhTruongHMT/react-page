@@ -1,10 +1,17 @@
 import { styled } from "styled-components";
 const StyleButton = styled.button`
   width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
   height: 50px;
   display: flex;
-  flex-direction: column;
+  border-radius: 12px;
+  flex-direction: row;
   padding: 14.5px 16px 14.5px 16px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const Button = ({ Title, IconFist, IconFlast }) => {

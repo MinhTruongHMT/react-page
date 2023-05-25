@@ -10,6 +10,7 @@ const StyleLayout = styled.div`
     padding: 32px;
     width: 90%;
     background-color: #CAEAE6;
+  
   }
 `;
 export const Layout = ({ children }) => {
@@ -18,9 +19,7 @@ export const Layout = ({ children }) => {
       <SideBar></SideBar>
       <div className="Contener">
         <Header />
-        <div>
           {children}
-        </div>
       </div>
     </StyleLayout>
   );
