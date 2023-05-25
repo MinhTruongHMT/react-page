@@ -1,40 +1,77 @@
-//import { styled } from "styled-components";
 import { Layout } from "components/Layout";
 import { styled } from "styled-components";
-import Rectangle from "assets/Rectangle 13.svg";
-import { Button } from "components/Button";
+import { CardETH } from "components/Card";
+import { Discover } from "components/Discover";
+import { Trending } from "components/Trending";
+import { CardStyle } from "components/Card";
 const StyleContener = styled.div`
-  width: 100%;
-  background-color: red;
-  .background{
-    position: relative;
-    img{
-      width: 50%;
-    }
-    .Text{
-      position: absolute;
-      top: 77px;
-      left: 69px;
-      right: 120px;
+  display: flex;
+  flex-direction: row;
+  .divright {
+    width: 70%;
+    margin-right: 20px;
+    .ETH {
+      width: 100%;
+      height: 294px;
+      overflow: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
     }
   }
+  .divleft {
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
 
+    .wrapDiv {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+  }
 `;
-
 
 const Home = () => {
   return (
     <Layout>
       <StyleContener>
-        <div>
-          <div className="background">
-            <img src={Rectangle} alt="Rectangle" />
-            <div className="Text">
-              <h1>Discover, Create and Sell Your Own NFT.
-              </h1>
-              <button>gf</button>
-              <button>gf</button>
-            </div>
+        <div className="divright">
+          <Discover />
+          <Trending />
+          <div className="ETH">
+            <CardETH></CardETH>
+            <CardETH></CardETH>
+            <CardETH></CardETH>
+            <CardETH></CardETH>
+          </div>
+        </div>
+        <div className="divleft">
+          <div className="wrapDiv">
+            <CardStyle
+              title={"Revenue"}
+              amount="5.00"
+              percent={12.3}
+            ></CardStyle>
+            <CardStyle
+              title={"Spending"}
+              amount="5.00"
+              percent={-12.3}
+            ></CardStyle>
+            <CardStyle
+              title={"ROI"}
+              content="+14.02"
+              percent={12.3}
+            ></CardStyle>
+            <CardStyle
+              title={"Estimated"}
+              amount="5.00"
+              percent={12.3}
+            ></CardStyle>
           </div>
         </div>
       </StyleContener>

@@ -12,6 +12,7 @@ const StyleButton = styled.button`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border: 0;
 `;
 
 export const Button = ({ Title, IconFist, IconFlast }) => {

@@ -15,6 +15,7 @@ const StyleButton = styled.button`
   color: #ffff;
   font-family: "DM Sans", sans-serif;
   background-image:linear-gradient(to right,#5429FF,#BBAAFF) ;
+  border: 0;
   /* img{
     position: absolute;
     left: 10px;
@@ -24,6 +25,7 @@ const StyleButton = styled.button`
     justify-content: center;
     width: 100%;
     align-items: center;
+  
     .ETH{
       width: 20px;
       height: 20px;

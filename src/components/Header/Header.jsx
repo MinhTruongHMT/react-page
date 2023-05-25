@@ -3,14 +3,13 @@ import SearchIcon from "assets/Icon.png";
 import NofiIcon from "assets/nofi.png";
 import Ellipse from "assets/Ellipse 5.png";
 import Avater from "assets/avatar.png";
-
 const StyleHeader = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 56px;
   width: 100%;
-
+  margin-bottom: 40px;
   .Search {
     padding: 18px 26px 18px 26px;
     display: flex;

@@ -1,2 +1,4 @@
 import {Card} from "./Card";
-export {Card};
+import {CardETH} from "./CardETH";
+import {CardStyle} from "./CardStyle";
+export {Card,CardETH,CardStyle};
