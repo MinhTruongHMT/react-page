@@ -110,7 +110,7 @@ const Login = () => {
             </div>
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <StyleButton bgColor={"#5429FF"} textColor={"white"}>
+            <StyleButton bgColor={"#5429FF"} textColor={"white"} >
               Login
             </StyleButton>
           </div>

@@ -8,6 +8,13 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/login" element={<Login />}></Route>
+      <Route path="/s" element={<Home />}></Route>
+      <Route path="/a" element={<Home />}></Route>
+      <Route path="/q" element={<Home />}></Route>
+      <Route path="/v" element={<Home />}></Route>
+      <Route path="/b" element={<Home />}></Route>
+      <Route path="/k" element={<Home />}></Route>
+      <Route path="/l" element={<Home />}></Route>
     </Routes>
   );
 }

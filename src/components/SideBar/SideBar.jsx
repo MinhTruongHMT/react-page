@@ -64,7 +64,7 @@ const StyleSideBar = styled.div`
         border-radius: 50px;
       }
       input:checked + .slider {
-        background-color: #5429FF;
+        background-color: #5429ff;
       }
       input:checked + .slider::before {
         transform: translateX(17px);
@@ -87,6 +87,14 @@ const StyleNavItem = styled.div`
     color: #7a797d;
     text-decoration: none;
   }
+  .active {
+    svg {
+      path {
+        stroke: #f30ee4;
+      }
+    }
+    color: #f30ee4;
+  }
 `;
 const NavItem = ({ path, text, image }) => {
   return (
@@ -103,14 +111,14 @@ export const SideBar = () => {
     <StyleSideBar>
       <Logo />
       <NavItem text="Dashboard" path="/" image={Dashboard}></NavItem>
-      <NavItem text="Market" path="/about" image={Shop}></NavItem>
-      <NavItem text="Login" path="/login" image={Judge}></NavItem>
+      <NavItem text="Market" path="/s" image={Shop}></NavItem>
+      <NavItem text="Login" path="/a" image={Judge}></NavItem>
       <div className="TitleSideBar">Profile</div>
-      <NavItem text="My Portfolio" path="/" image={Buy}></NavItem>
-      <NavItem text="Wallet" path="/about" image={Wallet}></NavItem>
-      <NavItem text="Favourites" path="/login" image={Lovely}></NavItem>
-      <NavItem text="History" path="/about" image={Clock}></NavItem>
-      <NavItem text="Settings" path="/login" image={Setting}></NavItem>
+      <NavItem text="My Portfolio" path="/q" image={Buy}></NavItem>
+      <NavItem text="Wallet" path="/v" image={Wallet}></NavItem>
+      <NavItem text="Favourites" path="/b" image={Lovely}></NavItem>
+      <NavItem text="History" path="/k" image={Clock}></NavItem>
+      <NavItem text="Settings" path="/l" image={Setting}></NavItem>
       <div className="TitleSideBar">Other</div>
       <div className="Toggle">
         <NavItem text="Light Mode" path="/login" image={Light}></NavItem>
