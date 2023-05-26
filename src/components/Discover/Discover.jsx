@@ -1,5 +1,8 @@
 import { styled } from "styled-components";
 import Background from "assets/Rectangle 13.svg";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+
 const StyleDiscover = styled.div`
   position: relative;
   img {
@@ -10,7 +13,7 @@ const StyleDiscover = styled.div`
     position: absolute;
     top: 100px;
     left: 100px;
-   
+
     font-weight: 700;
     font-size: 30px;
     line-height: 64.8px;
@@ -46,7 +49,17 @@ const StyleDiscover = styled.div`
 export const Discover = () => {
   return (
     <StyleDiscover>
-      <img src={Background} alt="" />
+      <Carousel showThumbs={false}  autoPlay={true} infiniteLoop={true}>
+        <div>
+          <img src={Background} />
+        </div>
+        <div>
+          <img src={Background} />
+        </div>
+        <div>
+          <img src={Background} />
+        </div>
+      </Carousel>
       <div className="Text">
         <h1>Discover, Create and Sell Your Own NFT.</h1>
         <div>

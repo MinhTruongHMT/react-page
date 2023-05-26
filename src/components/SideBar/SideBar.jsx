@@ -10,6 +10,7 @@ import Clock from "assets/clock.png";
 import Setting from "assets/setting.png";
 import Light from "assets/Light.png";
 import { Card } from "components/Card";
+import { Logo } from "components/Logo";
 
 const StyleSideBar = styled.div`
   display: flex;
@@ -118,6 +119,7 @@ const NavItem = ({ path, text, image }) => {
 export const SideBar = () => {
   return (
     <StyleSideBar>
+      <Logo/>
       <NavItem text="Dashboard" path="/" image={Dashboard}></NavItem>
       <NavItem text="Market" path="/about" image={Shop}></NavItem>
       <NavItem text="Login" path="/login" image={Judge}></NavItem>

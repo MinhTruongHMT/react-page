@@ -3,10 +3,12 @@ import greenArrow from "assets/greenIcon.png";
 import redArrow from "assets/redicon.png";
 const StyledButton = styled.button`
   display: flex;
+  justify-content:center ;
+  align-items: center;
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   border: ${(props) =>
-    props.boderColor ? `1px solid ${props.boderColor}` : "none"};
+  props.boderColor ? `1px solid ${props.boderColor}` : "none"};
   border-radius: ${(props) => props.borderRadius};
   background: ${(props) => props.bgColor};
   font-weight: 500;
@@ -55,4 +57,5 @@ ButtonStyle.defaultProps = {
   borderRadius: "40px",
   fontSize: 16,
   alignText: "center",
+ 
 };
