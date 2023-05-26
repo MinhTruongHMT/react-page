@@ -2,8 +2,7 @@ import styled from "styled-components";
 import greenArrow from "assets/greenIcon.png";
 import redArrow from "assets/redicon.png";
 const StyledButton = styled.button`
-display: flex;
-
+  display: flex;
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   border: ${(props) =>
@@ -28,6 +27,7 @@ export const ButtonStyle = ({
   fontSize,
   borderRadius,
   children,
+  alignText,
   ...rest
 }) => {
   return (
@@ -42,9 +42,7 @@ export const ButtonStyle = ({
       borderRadius={borderRadius}
       {...rest}
     >
-      {percent && (
-        <img src={percent < 0 ? redArrow : greenArrow} alt="arr"></img>
-      )}
+      {percent && <img src={percent < 0 ? redArrow : greenArrow} alt=""></img>}
       {children}
     </StyledButton>
   );
@@ -56,4 +54,5 @@ ButtonStyle.defaultProps = {
   height: "46px",
   borderRadius: "40px",
   fontSize: 16,
+  alignText: "center",
 };

@@ -91,7 +91,6 @@ const StyleSideBar = styled.div`
 `;
 const StyleNavItem = styled.div`
   display: flex;
-
   margin-bottom: 26px;
   font-weight: 500;
   font-size: 16px;
@@ -99,6 +98,7 @@ const StyleNavItem = styled.div`
   font-family: "DM Sans", sans-serif;
   img {
     margin-right: 16px;
+    object-fit: contain;
   }
   .testColor {
     color: #7a797d;
