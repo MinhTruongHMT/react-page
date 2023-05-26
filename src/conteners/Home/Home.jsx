@@ -5,6 +5,8 @@ import { Discover } from "components/Discover";
 import { Trending } from "components/Trending";
 import { CardStyle } from "components/Card";
 import { UserInfo } from "components/UserInfo";
+import Rectangle1 from "assets/Rectangle 8.png";
+import Rectangle2 from "assets/Rectangle 9.png";
 const StyleContener = styled.div`
   display: flex;
   flex-direction: row;
@@ -67,14 +69,13 @@ const Home = () => {
           <Discover />
           <Trending />
           <div className="ETH">
-            <CardETH></CardETH>
-            <CardETH></CardETH>
-            <CardETH></CardETH>
-            <CardETH></CardETH>
+            <CardETH image={Rectangle1}></CardETH>
+            <CardETH image={Rectangle2}></CardETH>
+            <CardETH image={Rectangle1}></CardETH>
+            <CardETH image={Rectangle2}></CardETH>
           </div>
         </div>
         <div className="divleft">
-       
           <div className="wrapDiv">
             <CardStyle
               title={"Revenue"}
@@ -98,7 +99,7 @@ const Home = () => {
             ></CardStyle>
           </div>
           <div className="TopCreator">
-            <div style={{ backgroundColor: "white" ,borderRadius:20 }}>
+            <div style={{ backgroundColor: "white", borderRadius: 20 }}>
               <div className="SeeAll">
                 <span className="Top">Top Creator</span>
                 <span>See All</span>

@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import Rectangle from "assets/Rectangle 8.png";
 import Avata from "assets/Ellipse 6.png";
 import Group from "assets/Group 8.svg";
 const StyleDiv = styled.div`
@@ -38,10 +37,10 @@ const StyleDiv = styled.div`
     }
   }
 `;
-export const CardETH = () => {
+export const CardETH = ({image}) => {
   return (
     <StyleDiv>
-      <img src={Rectangle} alt="" />
+      <img src={image} alt="" />
       <div className="TitleName">
         <span>Ape In Love</span>
         <span>21,5K Likes</span>
